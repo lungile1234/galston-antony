@@ -3,242 +3,250 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galston Anthony | Builder • Systems Thinker • Mayoral Candidate for Johannesburg</title>
-    <meta name="description" content="Galston Anthony - Builder, Systems Thinker, and Mayoral Candidate for Johannesburg. Restoring competence, accountability and dignity to Johannesburg.">
-    <meta name="keywords" content="Galston Anthony, Johannesburg Mayor, Systems Thinker, G2G Podcast, Mayoral Candidate 2026">
-    
-    <!-- Fonts & Icons -->
+    <title>Galston Anthony | Builder. Systems Thinker. Mayoral Candidate for Johannesburg 2026</title>
+    <meta name="description" content="Galston Anthony - Builder, Systems Thinker, and Mayoral Candidate for Johannesburg 2026. Let's Make Joburg Gold Again.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        /* ===== CSS VARIABLES ===== */
         :root {
-            /* Colors */
             --primary-black: #0a0a0a;
             --dark-gray: #1a1a1a;
             --medium-gray: #2a2a2a;
             --light-gray: #444;
             --gold: #d4af37;
+            --gold-dark: #b8941f;
             --gold-light: #f4e4a6;
+            --gold-bg: rgba(212, 175, 55, 0.1);
             --white: #ffffff;
             --off-white: #f5f5f5;
-            
-            /* Transitions */
-            --transition-fast: 0.2s ease;
-            --transition-medium: 0.3s ease;
-            --transition-slow: 0.5s ease;
-            
-            /* Spacing */
-            --spacing-xs: 0.5rem;
-            --spacing-sm: 1rem;
-            --spacing-md: 2rem;
-            --spacing-lg: 3rem;
-            --spacing-xl: 4rem;
-            
-            /* Border Radius */
-            --radius-sm: 4px;
-            --radius-md: 8px;
-            --radius-lg: 12px;
-            
-            /* Shadows */
-            --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.1);
-            --shadow-md: 0 5px 20px rgba(0, 0, 0, 0.2);
-            --shadow-lg: 0 15px 30px rgba(0, 0, 0, 0.3);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            --shadow-light: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
-        
-        /* ===== RESET & BASE STYLES ===== */
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         html {
             scroll-behavior: smooth;
-            font-size: 16px;
+            scroll-padding-top: 80px;
         }
-        
+
         body {
             font-family: 'Inter', sans-serif;
-            line-height: 1.6;
+            line-height: 1.7;
             color: var(--off-white);
             background-color: var(--primary-black);
             overflow-x: hidden;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
+            font-weight: 400;
         }
-        
+
         h1, h2, h3, h4, h5, h6 {
             font-family: 'Playfair Display', serif;
-            font-weight: 600;
+            font-weight: 700;
             line-height: 1.2;
-            margin-bottom: var(--spacing-sm);
+            margin-bottom: 1.5rem;
         }
-        
-        p {
-            margin-bottom: var(--spacing-sm);
-        }
-        
-        a {
-            color: inherit;
-            text-decoration: none;
-            transition: var(--transition-medium);
-        }
-        
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        
-        ul {
-            list-style: none;
-        }
-        
-        /* ===== UTILITY CLASSES ===== */
+
         .container {
             width: 100%;
-            max-width: 1200px;
+            max-width: 1300px;
             margin: 0 auto;
-            padding: 0 var(--spacing-md);
+            padding: 0 25px;
         }
-        
-        .section {
-            padding: var(--spacing-xl) 0;
+
+        section {
+            padding: 120px 0;
             position: relative;
         }
-        
+
         .section-title {
             text-align: center;
-            margin-bottom: var(--spacing-lg);
+            margin-bottom: 70px;
             position: relative;
         }
-        
+
         .section-title h2 {
-            font-size: 2.5rem;
+            font-size: 3rem;
             color: var(--white);
             display: inline-block;
+            position: relative;
+            padding-bottom: 20px;
         }
-        
-        .section-title h2::after {
+
+        .section-title h2:after {
             content: '';
             position: absolute;
-            width: 60px;
-            height: 3px;
-            background: var(--gold);
-            bottom: -15px;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--gold), var(--gold-light));
+            bottom: 0;
             left: 50%;
             transform: translateX(-50%);
+            border-radius: 2px;
         }
-        
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--gold-light);
+            max-width: 700px;
+            margin: 20px auto 0;
+            font-size: 1.2rem;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+        }
+
         .btn {
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            gap: 0.5rem;
-            padding: 0.875rem 2rem;
+            gap: 10px;
+            padding: 16px 36px;
             background-color: transparent;
             color: var(--gold);
             border: 2px solid var(--gold);
-            border-radius: 0;
+            border-radius: 4px;
             font-weight: 600;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            font-size: 0.875rem;
+            letter-spacing: 1.2px;
+            text-decoration: none;
+            transition: var(--transition);
             cursor: pointer;
-            transition: var(--transition-medium);
+            font-size: 0.9rem;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
         }
-        
+
+        .btn:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: var(--gold);
+            transition: var(--transition);
+            z-index: -1;
+        }
+
         .btn:hover {
-            background-color: var(--gold);
             color: var(--primary-black);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-light);
         }
-        
+
+        .btn:hover:before {
+            left: 0;
+        }
+
         .btn-primary {
             background-color: var(--gold);
             color: var(--primary-black);
+            border-color: var(--gold);
         }
-        
+
+        .btn-primary:before {
+            background: var(--white);
+        }
+
         .btn-primary:hover {
-            background-color: transparent;
             color: var(--gold);
+            border-color: var(--white);
         }
-        
-        .btn-large {
-            padding: 1rem 2.5rem;
-            font-size: 1rem;
-        }
-        
-        /* ===== HEADER & NAVIGATION ===== */
-        .header {
+
+        /* Header & Navigation */
+        header {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             z-index: 1000;
-            background-color: rgba(10, 10, 10, 0.95);
-            backdrop-filter: blur(10px);
-            padding: 1.25rem 0;
-            transition: var(--transition-medium);
+            background-color: rgba(10, 10, 10, 0.98);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            padding: 20px 0;
+            transition: var(--transition);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.1);
         }
-        
-        .header.scrolled {
-            padding: 1rem 0;
-            box-shadow: var(--shadow-md);
+
+        header.scrolled {
+            padding: 15px 0;
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.4);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
         }
-        
+
         .nav-container {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-        
+
         .logo {
             font-family: 'Playfair Display', serif;
-            font-size: 1.75rem;
-            font-weight: 700;
+            font-size: 2rem;
+            font-weight: 800;
             color: var(--white);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
-        
+
         .logo span {
             color: var(--gold);
         }
-        
+
+        .logo-icon {
+            color: var(--gold);
+            font-size: 1.5rem;
+        }
+
         .nav-menu {
             display: flex;
-            gap: 2rem;
+            list-style: none;
+            gap: 40px;
         }
-        
-        .nav-link {
-            color: var(--off-white);
-            font-weight: 500;
-            font-size: 0.875rem;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
+
+        .nav-menu li {
             position: relative;
         }
-        
-        .nav-link::after {
+
+        .nav-menu a {
+            color: var(--off-white);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: var(--transition);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 8px 0;
+        }
+
+        .nav-menu a:after {
             content: '';
             position: absolute;
-            bottom: -4px;
+            bottom: 0;
             left: 0;
             width: 0;
             height: 2px;
-            background-color: var(--gold);
-            transition: var(--transition-medium);
+            background: var(--gold);
+            transition: var(--transition);
         }
-        
-        .nav-link:hover {
+
+        .nav-menu a:hover {
             color: var(--gold);
         }
-        
-        .nav-link:hover::after {
+
+        .nav-menu a:hover:after {
             width: 100%;
         }
-        
+
         .mobile-menu-btn {
             display: none;
             background: none;
@@ -246,799 +254,1105 @@
             color: var(--white);
             font-size: 1.5rem;
             cursor: pointer;
+            transition: var(--transition);
+            padding: 5px;
         }
-        
-        /* ===== HERO SECTION ===== */
+
+        .mobile-menu-btn:hover {
+            color: var(--gold);
+        }
+
+        /* Hero Section */
         .hero {
+            padding-top: 200px;
+            padding-bottom: 150px;
             min-height: 100vh;
             display: flex;
             align-items: center;
             position: relative;
-            padding-top: 6rem;
             overflow: hidden;
         }
-        
+
         .hero-bg {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(rgba(10, 10, 10, 0.9), rgba(10, 10, 10, 0.9)),
-                        <img src="background.jpg">;
+            background: linear-gradient(rgba(10, 10, 10, 0.9), rgba(10, 10, 10, 0.95)),
+                        url('https://images.unsplash.com/photo-1589156280159-27698a70f29e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
             background-size: cover;
             background-position: center;
+            background-attachment: fixed;
             z-index: 1;
+            transform: scale(1.1);
+            animation: zoomOut 20s infinite alternate;
         }
-        
+
+        @keyframes zoomOut {
+            0% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
         .hero-content {
             position: relative;
             z-index: 2;
-            max-width: 700px;
+            max-width: 800px;
         }
-        
+
         .hero h1 {
-            font-size: 3.5rem;
+            font-size: 5rem;
             color: var(--white);
-            margin-bottom: 0.5rem;
+            margin-bottom: 15px;
             line-height: 1.1;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            animation: fadeInUp 1s ease;
         }
-        
+
         .hero-subtitle {
-            font-size: 1.5rem;
+            font-size: 2.2rem;
             color: var(--gold);
-            margin-bottom: 1.5rem;
-            font-weight: 500;
+            margin-bottom: 30px;
+            font-weight: 600;
+            animation: fadeInUp 1s ease 0.2s both;
         }
-        
+
         .hero-text {
-            font-size: 1.125rem;
+            font-size: 1.3rem;
             color: var(--off-white);
-            margin-bottom: 2rem;
-            max-width: 600px;
+            margin-bottom: 50px;
+            max-width: 650px;
+            font-weight: 300;
+            line-height: 1.8;
+            animation: fadeInUp 1s ease 0.4s both;
         }
-        
+
         .hero-buttons {
             display: flex;
-            gap: 1rem;
+            gap: 20px;
             flex-wrap: wrap;
+            animation: fadeInUp 1s ease 0.6s both;
         }
-        
-        .hero-portrait {
-            position: absolute;
-            right: 5%;
-            bottom: 0;
-            width: 400px;
-            height: 550px;
-            background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-                         <img src="herman.jpg">;
-            background-size: cover;
-            background-position: center;
-            z-index: 2;
-            border-top-left-radius: var(--radius-lg);
-            border-top-right-radius: var(--radius-lg);
-            box-shadow: -20px -20px 0px rgba(212, 175, 55, 0.2);
-        }
-        
-        /* ===== STATS SECTION ===== */
-        .stats {
-            background-color: var(--dark-gray);
-            padding: 4rem 0;
-        }
-        
-        .stats-grid {
+
+        .hero-stats {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 1.5rem;
+            gap: 30px;
+            margin-top: 60px;
+            padding-top: 60px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            animation: fadeInUp 1s ease 0.8s both;
         }
-        
-        .stat-card {
+
+        .hero-stat {
             text-align: center;
-            padding: 2rem;
-            background-color: var(--medium-gray);
-            border-radius: var(--radius-md);
-            transition: var(--transition-medium);
         }
-        
-        .stat-card:hover {
-            transform: translateY(-10px);
-            box-shadow: var(--shadow-lg);
-        }
-        
-        .stat-number {
+
+        .hero-stat-number {
             font-size: 2.5rem;
             color: var(--gold);
             font-weight: 700;
-            margin-bottom: 0.5rem;
+            margin-bottom: 10px;
             font-family: 'Inter', sans-serif;
         }
-        
-        .stat-label {
-            color: var(--white);
-            font-size: 0.875rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        
-        /* ===== WATCH SECTION ===== */
-        .watch {
-            background-color: var(--dark-gray);
-        }
-        
-        .section-subtitle {
-            text-align: center;
+
+        .hero-stat-label {
             color: var(--off-white);
-            max-width: 700px;
-            margin: 0 auto 3rem;
-            font-size: 1.125rem;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 500;
         }
-        
-        .featured-videos {
+
+        /* Animated Counter */
+        .counter {
+            font-size: 3rem;
+            color: var(--gold);
+            font-weight: 700;
+            display: inline-block;
+        }
+
+        /* Stats Section */
+        .stats-section {
+            background-color: var(--dark-gray);
+            padding: 100px 0;
+            position: relative;
+        }
+
+        .stats-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1.5rem;
-            margin-bottom: 3rem;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
         }
-        
-        .video-card {
-            background-color: var(--medium-gray);
-            border-radius: var(--radius-md);
-            overflow: hidden;
-            transition: var(--transition-medium);
-        }
-        
-        .video-card:hover {
-            transform: translateY(-10px);
-            box-shadow: var(--shadow-lg);
-        }
-        
-        .video-thumbnail {
-            height: 220px;
-            background-color: var(--light-gray);
+
+        .stat-card {
+            text-align: center;
+            padding: 50px 30px;
+            background: var(--medium-gray);
+            border-radius: 12px;
+            transition: var(--transition);
+            border: 1px solid rgba(212, 175, 55, 0.1);
             position: relative;
             overflow: hidden;
         }
-        
-        .play-btn {
+
+        .stat-card:before {
+            content: '';
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 60px;
-            height: 60px;
-            background-color: rgba(212, 175, 55, 0.9);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--primary-black);
-            font-size: 1.25rem;
-            transition: var(--transition-medium);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--gold), var(--gold-light));
         }
-        
-        .video-card:hover .play-btn {
-            background-color: var(--gold);
+
+        .stat-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow);
+            border-color: rgba(212, 175, 55, 0.3);
         }
-        
-        .video-content {
-            padding: 1.5rem;
-        }
-        
-        .video-title {
-            font-size: 1.25rem;
-            color: var(--white);
-            margin-bottom: 0.5rem;
-        }
-        
-        .video-description {
-            color: var(--off-white);
-            font-size: 0.875rem;
-            margin-bottom: 1rem;
-        }
-        
-        .video-meta {
+
+        .stat-icon {
+            font-size: 2.5rem;
             color: var(--gold);
-            font-size: 0.875rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
+            margin-bottom: 20px;
         }
-        
-        .videos-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1.5rem;
-            margin-top: 2rem;
+
+        .stat-number {
+            font-size: 3.5rem;
+            color: var(--gold);
+            font-weight: 800;
+            margin-bottom: 10px;
+            font-family: 'Inter', sans-serif;
         }
-        
-        /* ===== MANIFESTO SECTION ===== */
-        .manifesto {
+
+        .stat-label {
+            color: var(--white);
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 600;
+        }
+
+        /* Watch Section */
+        .watch-section {
             background-color: var(--primary-black);
             position: relative;
             overflow: hidden;
         }
-        
-        .manifesto::before {
+
+        .watch-section:before {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
-            background-size: cover;
-            background-position: center;
-            opacity: 0.05;
+            background: linear-gradient(45deg, rgba(212, 175, 55, 0.03) 0%, transparent 100%);
+            pointer-events: none;
         }
-        
+
+        .featured-videos {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            margin-bottom: 80px;
+        }
+
+        .video-card {
+            background-color: var(--dark-gray);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: var(--transition);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            position: relative;
+        }
+
+        .video-card:hover {
+            transform: translateY(-15px);
+            box-shadow: var(--shadow);
+            border-color: var(--gold);
+        }
+
+        .video-card.featured {
+            grid-column: span 2;
+        }
+
+        .video-thumbnail {
+            height: 300px;
+            background-color: var(--light-gray);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .video-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .video-card:hover .video-thumbnail img {
+            transform: scale(1.05);
+        }
+
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80px;
+            height: 80px;
+            background-color: rgba(212, 175, 55, 0.95);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-black);
+            font-size: 2rem;
+            transition: var(--transition);
+            border: 3px solid var(--white);
+        }
+
+        .video-card:hover .play-button {
+            background-color: var(--gold);
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+
+        .video-info {
+            padding: 30px;
+        }
+
+        .video-title {
+            font-size: 1.5rem;
+            color: var(--white);
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+
+        .video-description {
+            color: var(--off-white);
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        .video-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--gold);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .videos-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        /* Manifesto Section */
+        .manifesto-section {
+            background: linear-gradient(135deg, var(--dark-gray) 0%, var(--primary-black) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .manifesto-section:before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.05) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
         .manifesto-content {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             text-align: center;
             position: relative;
             z-index: 2;
         }
-        
-        .manifesto-quote {
-            font-size: 1.375rem;
+
+        .manifesto-text {
+            font-size: 1.5rem;
             color: var(--off-white);
             line-height: 1.8;
-            margin-bottom: 2rem;
+            margin-bottom: 50px;
             font-style: italic;
             position: relative;
-            padding: 0 1.5rem;
+            padding: 0 40px;
+            font-weight: 300;
         }
-        
-        .manifesto-quote::before,
-        .manifesto-quote::after {
+
+        .manifesto-text:before,
+        .manifesto-text:after {
             content: '"';
-            font-size: 3rem;
+            font-size: 6rem;
             color: var(--gold);
             font-family: 'Playfair Display', serif;
             position: absolute;
             opacity: 0.3;
+            line-height: 1;
         }
-        
-        .manifesto-quote::before {
-            top: -1rem;
+
+        .manifesto-text:before {
+            top: -20px;
             left: 0;
         }
-        
-        .manifesto-quote::after {
-            bottom: -2rem;
+
+        .manifesto-text:after {
+            bottom: -60px;
             right: 0;
         }
-        
+
         .manifesto-author {
-            font-size: 1.125rem;
+            font-size: 1.3rem;
             color: var(--gold);
-            font-weight: 600;
-            margin: 2rem 0 3rem;
+            font-weight: 700;
+            margin-top: 40px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
-        
-        .download-card {
-            background-color: var(--medium-gray);
-            padding: 3rem;
-            border-radius: var(--radius-md);
-            margin-top: 3rem;
+
+        .download-box {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(212, 175, 55, 0.05) 100%);
+            padding: 60px;
+            border-radius: 16px;
+            margin-top: 70px;
             text-align: center;
-            border-left: 4px solid var(--gold);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            backdrop-filter: blur(10px);
         }
-        
-        .download-card h3 {
+
+        .download-box h3 {
             color: var(--white);
-            margin-bottom: 1rem;
-        }
-        
-        .download-card p {
-            color: var(--off-white);
-            margin-bottom: 2rem;
-        }
-        
-        /* ===== ABOUT SECTION ===== */
-        .about {
-            background-color: var(--dark-gray);
-            position: relative;
-        }
-        
-        .about::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
-            background-size: cover;
-            background-position: center;
-            opacity: 0.1;
-        }
-        
-        .about-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: center;
-            position: relative;
-            z-index: 2;
-        }
-        
-        .about-text h3 {
+            margin-bottom: 20px;
             font-size: 2rem;
-            color: var(--white);
-            margin-bottom: 1.5rem;
         }
-        
-        .about-points {
-            margin-top: 2rem;
+
+        .download-box p {
+            color: var(--off-white);
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.9;
         }
-        
-        .point {
-            display: flex;
-            margin-bottom: 1rem;
-        }
-        
-        .point i {
-            color: var(--gold);
-            margin-right: 1rem;
-            margin-top: 0.25rem;
-        }
-        
-        .about-image {
-            height: 450px;
-            background: url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
-            background-size: cover;
-            background-position: center;
-            border-radius: var(--radius-md);
-            box-shadow: 20px 20px 0px rgba(212, 175, 55, 0.2);
-        }
-        
-        /* ===== JOIN SECTION ===== */
-        .join {
+
+        /* About Section */
+        .about-section {
             background-color: var(--primary-black);
             position: relative;
         }
-        
-        .join::before {
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            font-size: 2.5rem;
+            color: var(--white);
+            margin-bottom: 30px;
+        }
+
+        .about-text p {
+            margin-bottom: 25px;
+            color: var(--off-white);
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .about-points {
+            margin-top: 40px;
+        }
+
+        .point {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 25px;
+        }
+
+        .point i {
+            color: var(--gold);
+            margin-right: 20px;
+            margin-top: 5px;
+            font-size: 1.3rem;
+        }
+
+        .point-content {
+            flex: 1;
+        }
+
+        .point-content h4 {
+            color: var(--white);
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+        }
+
+        .about-image {
+            height: 600px;
+            background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)),
+                        url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
+            background-size: cover;
+            background-position: center;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-image:before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: -20px;
+            bottom: -20px;
+            background: linear-gradient(45deg, var(--gold) 0%, transparent 100%);
+            opacity: 0.2;
+            z-index: -1;
+            border-radius: 12px;
+        }
+
+        /* Join Section */
+        .join-section {
+            background: linear-gradient(135deg, var(--primary-black) 0%, var(--dark-gray) 100%);
+            position: relative;
+        }
+
+        .join-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+
+        .join-card {
+            background: var(--medium-gray);
+            padding: 50px 40px;
+            text-align: center;
+            border-radius: 16px;
+            transition: var(--transition);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .join-card:before {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
-            height: 100%;
-            background: url('https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
-            background-size: cover;
-            background-position: center;
-            opacity: 0.03;
+            height: 5px;
+            background: linear-gradient(90deg, var(--gold), var(--gold-light));
         }
-        
-        .join-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1.5rem;
-            position: relative;
-            z-index: 2;
-        }
-        
-        .join-card {
-            background-color: var(--medium-gray);
-            padding: 2.5rem 2rem;
-            text-align: center;
-            border-radius: var(--radius-md);
-            transition: var(--transition-medium);
-            border-top: 4px solid var(--gold);
-        }
-        
+
         .join-card:hover {
-            transform: translateY(-10px);
-            box-shadow: var(--shadow-lg);
-        }
-        
-        .join-icon {
-            font-size: 2.5rem;
-            color: var(--gold);
-            margin-bottom: 1.5rem;
-        }
-        
-        .join-card h3 {
-            font-size: 1.375rem;
-            color: var(--white);
-            margin-bottom: 1rem;
-        }
-        
-        .join-card p {
-            color: var(--off-white);
-            margin-bottom: 1.5rem;
-            font-size: 0.9375rem;
-        }
-        
-        .form-group {
-            margin-bottom: 1rem;
-        }
-        
-        .form-control {
-            width: 100%;
-            padding: 0.875rem;
-            background-color: var(--dark-gray);
-            border: 1px solid var(--light-gray);
-            border-radius: var(--radius-sm);
-            color: var(--white);
-            font-family: 'Inter', sans-serif;
-            font-size: 0.9375rem;
-        }
-        
-        .form-control:focus {
-            outline: none;
+            transform: translateY(-15px);
+            box-shadow: var(--shadow);
             border-color: var(--gold);
         }
-        
-        /* ===== EVENTS SECTION ===== */
-        .events {
-            background-color: var(--dark-gray);
+
+        .join-icon {
+            font-size: 3rem;
+            color: var(--gold);
+            margin-bottom: 30px;
         }
-        
+
+        .join-card h3 {
+            font-size: 1.8rem;
+            color: var(--white);
+            margin-bottom: 20px;
+        }
+
+        .join-card p {
+            color: var(--off-white);
+            margin-bottom: 30px;
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            color: var(--off-white);
+            margin-bottom: 8px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 16px 20px;
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            color: var(--white);
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: var(--gold);
+            background-color: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+        }
+
+        /* Events Section */
+        .events-section {
+            background-color: var(--dark-gray);
+            position: relative;
+        }
+
         .events-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 1.5rem;
+            gap: 40px;
         }
-        
+
         .event-card {
-            background-color: var(--medium-gray);
-            border-radius: var(--radius-md);
+            background: var(--medium-gray);
+            border-radius: 12px;
             overflow: hidden;
-            transition: var(--transition-medium);
+            transition: var(--transition);
+            border: 1px solid rgba(255, 255, 255, 0.05);
         }
-        
+
         .event-card:hover {
             transform: translateY(-10px);
-            box-shadow: var(--shadow-lg);
+            box-shadow: var(--shadow);
         }
-        
+
         .event-date {
-            background-color: var(--gold);
+            background: linear-gradient(90deg, var(--gold), var(--gold-dark));
             color: var(--primary-black);
-            padding: 1rem;
+            padding: 20px;
             text-align: center;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 1.1rem;
+        }
+
+        .event-info {
+            padding: 30px;
+        }
+
+        .event-title {
+            font-size: 1.4rem;
+            color: var(--white);
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+
+        .event-description {
+            color: var(--off-white);
+            margin-bottom: 20px;
+            font-size: 1rem;
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+
+        .event-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 25px;
+        }
+
+        .event-status {
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.85rem;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
-        
-        .event-content {
-            padding: 1.5rem;
-        }
-        
-        .event-title {
-            font-size: 1.25rem;
-            color: var(--white);
-            margin-bottom: 0.5rem;
-        }
-        
-        .event-description {
-            color: var(--off-white);
-            margin-bottom: 1rem;
-            font-size: 0.875rem;
-        }
-        
-        .event-status {
-            display: inline-block;
-            padding: 0.375rem 1rem;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-        
-        .status-upcoming {
-            background-color: rgba(212, 175, 55, 0.1);
+
+        .event-status.upcoming {
+            background-color: rgba(212, 175, 55, 0.2);
             color: var(--gold);
             border: 1px solid var(--gold);
         }
-        
-        .status-past {
+
+        .event-status.past {
             background-color: rgba(68, 68, 68, 0.5);
             color: var(--off-white);
+            border: 1px solid var(--light-gray);
         }
-        
-        .status-tbc {
+
+        .event-status.tbc {
             background-color: rgba(106, 90, 205, 0.2);
             color: #6a5acd;
             border: 1px solid #6a5acd;
         }
-        
-        /* ===== PRESS SECTION ===== */
-        .press {
+
+        /* Press Section */
+        .press-section {
             background-color: var(--primary-black);
+            position: relative;
         }
-        
+
         .press-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 1.5rem;
+            gap: 40px;
         }
-        
+
         .press-card {
-            background-color: var(--medium-gray);
-            border-radius: var(--radius-md);
+            background: var(--dark-gray);
+            border-radius: 12px;
             overflow: hidden;
-            transition: var(--transition-medium);
+            transition: var(--transition);
+            border: 1px solid rgba(255, 255, 255, 0.05);
         }
-        
+
         .press-card:hover {
             transform: translateY(-10px);
-            box-shadow: var(--shadow-lg);
+            box-shadow: var(--shadow);
+            border-color: var(--gold);
         }
-        
+
         .press-image {
-            height: 180px;
-            background: var(--light-gray) url('https://images.unsplash.com/photo-1589652717521-10c0d092dea9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
+            height: 200px;
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
+                        url('https://images.unsplash.com/photo-1589652717521-10c0d092dea9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
             background-size: cover;
             background-position: center;
-        }
-        
-        .press-content {
-            padding: 1.5rem;
-        }
-        
-        .press-type {
-            color: var(--gold);
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 0.5rem;
-            font-weight: 600;
-        }
-        
-        .press-title {
-            font-size: 1.125rem;
-            color: var(--white);
-            margin-bottom: 1rem;
-        }
-        
-        /* ===== BOOKS SECTION ===== */
-        .books {
-            background-color: var(--dark-gray);
             position: relative;
         }
-        
-        .books::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url('https://images.unsplash.com/photo-1589652717521-10c0d092dea9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
-            background-size: cover;
-            background-position: center;
-            opacity: 0.1;
+
+        .press-info {
+            padding: 30px;
         }
-        
+
+        .press-type {
+            color: var(--gold);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        .press-title {
+            font-size: 1.3rem;
+            color: var(--white);
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+
+        /* Books Section */
+        .books-section {
+            background: linear-gradient(135deg, var(--dark-gray) 0%, var(--primary-black) 100%);
+            position: relative;
+        }
+
         .books-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
-            position: relative;
-            z-index: 2;
+            gap: 50px;
         }
-        
+
         .book-card {
-            background-color: var(--medium-gray);
-            border-radius: var(--radius-md);
+            background: var(--medium-gray);
+            border-radius: 12px;
             overflow: hidden;
             display: flex;
-            transition: var(--transition-medium);
+            transition: var(--transition);
+            border: 1px solid rgba(255, 255, 255, 0.05);
         }
-        
+
         .book-card:hover {
             transform: translateY(-10px);
-            box-shadow: var(--shadow-lg);
+            box-shadow: var(--shadow);
+            border-color: var(--gold);
         }
-        
+
         .book-cover {
-            width: 140px;
-            background-color: var(--light-gray);
+            width: 180px;
+            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--gold);
-            font-size: 2.5rem;
-        }
-        
-        .book-content {
-            padding: 2rem;
-            flex: 1;
-        }
-        
-        .book-title {
-            font-size: 1.375rem;
             color: var(--white);
-            margin-bottom: 0.5rem;
-        }
-        
-        .book-description {
-            color: var(--off-white);
-            margin-bottom: 1.5rem;
-            font-size: 0.9375rem;
-        }
-        
-        /* ===== CONTACT SECTION ===== */
-        .contact {
-            background-color: var(--primary-black);
+            font-size: 3.5rem;
             position: relative;
+            overflow: hidden;
         }
-        
-        .contact::before {
+
+        .book-cover:before {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('https://images.unsplash.com/photo-1589156280159-27698a70f29e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
-            background-size: cover;
-            background-position: center;
-            opacity: 0.03;
+            background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.1) 50%, transparent 70%);
+            animation: shine 3s infinite;
         }
-        
+
+        @keyframes shine {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        .book-info {
+            padding: 40px;
+            flex: 1;
+        }
+
+        .book-title {
+            font-size: 1.8rem;
+            color: var(--white);
+            margin-bottom: 15px;
+        }
+
+        .book-description {
+            color: var(--off-white);
+            margin-bottom: 25px;
+            line-height: 1.7;
+            opacity: 0.9;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background-color: var(--primary-black);
+            position: relative;
+        }
+
+        .contact-section:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at top right, rgba(212, 175, 55, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
         .contact-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            position: relative;
-            z-index: 2;
+            gap: 80px;
         }
-        
+
         .contact-info h3 {
-            font-size: 2rem;
+            font-size: 2.2rem;
             color: var(--white);
-            margin-bottom: 2rem;
+            margin-bottom: 40px;
         }
-        
+
         .contact-details {
-            margin-bottom: 2.5rem;
+            margin-bottom: 50px;
         }
-        
+
         .contact-item {
             display: flex;
             align-items: center;
-            margin-bottom: 1rem;
+            margin-bottom: 25px;
         }
-        
+
         .contact-item i {
             color: var(--gold);
-            margin-right: 1rem;
-            font-size: 1.125rem;
-            width: 24px;
+            margin-right: 20px;
+            font-size: 1.5rem;
+            width: 30px;
         }
-        
-        .social-grid {
+
+        .contact-item a {
+            color: var(--off-white);
+            text-decoration: none;
+            transition: var(--transition);
+            font-size: 1.1rem;
+        }
+
+        .contact-item a:hover {
+            color: var(--gold);
+        }
+
+        .social-links {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.75rem;
+            gap: 15px;
         }
-        
+
         .social-link {
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 44px;
-            height: 44px;
-            background-color: var(--medium-gray);
-            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            background: var(--medium-gray);
+            border-radius: 12px;
             color: var(--white);
-            font-size: 1.125rem;
-            transition: var(--transition-medium);
+            font-size: 1.5rem;
+            transition: var(--transition);
+            text-decoration: none;
+            border: 1px solid rgba(255, 255, 255, 0.05);
         }
-        
+
         .social-link:hover {
-            background-color: var(--gold);
+            background: var(--gold);
             color: var(--primary-black);
             transform: translateY(-5px);
+            box-shadow: var(--shadow-light);
         }
-        
-        .g2g-link {
-            display: inline-flex;
-            align-items: center;
-            padding: 0.5rem 1.5rem;
-            background-color: var(--medium-gray);
-            border-radius: var(--radius-sm);
-            margin-top: 1rem;
+
+        .contact-form .form-group {
+            margin-bottom: 30px;
         }
-        
-        .g2g-link i {
-            margin-right: 0.5rem;
-        }
-        
-        textarea.form-control {
-            min-height: 150px;
+
+        .contact-form textarea {
+            width: 100%;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            color: var(--white);
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            min-height: 180px;
             resize: vertical;
+            transition: var(--transition);
         }
-        
-        /* ===== FOOTER ===== */
-        .footer {
+
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: var(--gold);
+            background-color: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+        }
+
+        /* Footer */
+        footer {
             background-color: var(--dark-gray);
-            padding: 4rem 0 2rem;
-            text-align: center;
+            padding: 80px 0 40px;
+            position: relative;
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
         }
-        
+
+        footer:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--gold), var(--gold-light));
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 50px;
+            margin-bottom: 60px;
+        }
+
         .footer-logo {
             font-family: 'Playfair Display', serif;
-            font-size: 2rem;
-            font-weight: 700;
+            font-size: 2.5rem;
+            font-weight: 800;
             color: var(--white);
-            margin-bottom: 1rem;
+            text-decoration: none;
             display: inline-block;
+            margin-bottom: 20px;
         }
-        
+
         .footer-logo span {
             color: var(--gold);
         }
-        
+
         .footer-tagline {
-            font-size: 1.25rem;
+            font-size: 1.4rem;
             color: var(--gold);
-            margin-bottom: 3rem;
-            font-weight: 500;
+            margin-bottom: 30px;
+            font-weight: 600;
         }
-        
+
+        .footer-about {
+            color: var(--off-white);
+            line-height: 1.8;
+            opacity: 0.8;
+        }
+
+        .footer-links h4 {
+            color: var(--white);
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: var(--off-white);
+            text-decoration: none;
+            transition: var(--transition);
+            opacity: 0.8;
+        }
+
+        .footer-links a:hover {
+            color: var(--gold);
+            opacity: 1;
+        }
+
+        .newsletter-form {
+            margin-top: 20px;
+        }
+
         .copyright {
             color: var(--off-white);
-            font-size: 0.875rem;
-            margin-top: 3rem;
-            padding-top: 2rem;
-            border-top: 1px solid var(--medium-gray);
+            font-size: 0.9rem;
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            opacity: 0.7;
         }
-        
-        /* ===== RESPONSIVE STYLES ===== */
-        @media (max-width: 1200px) {
-            .hero-portrait {
-                width: 350px;
-                height: 500px;
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
             }
         }
-        
-        @media (max-width: 992px) {
+
+        .animate {
+            animation: fadeInUp 1s ease both;
+        }
+
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: var(--gold);
+            color: var(--primary-black);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: var(--transition);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            box-shadow: var(--shadow);
+            border: 2px solid var(--gold);
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background: var(--primary-black);
+            color: var(--gold);
+            transform: translateY(-5px);
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 1200px) {
+            .container {
+                max-width: 1140px;
+            }
+            
             .hero h1 {
-                font-size: 2.75rem;
+                font-size: 4.5rem;
             }
             
             .hero-subtitle {
-                font-size: 1.25rem;
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .container {
+                max-width: 960px;
+                padding: 0 20px;
             }
             
-            .hero-portrait {
-                width: 300px;
-                height: 450px;
+            .hero h1 {
+                font-size: 4rem;
             }
             
-            .stats-grid,
+            .hero-subtitle {
+                font-size: 1.8rem;
+            }
+            
             .featured-videos,
             .videos-grid,
             .join-grid,
             .events-grid,
-            .press-grid {
+            .press-grid,
+            .stats-grid,
+            .about-stats,
+            .footer-content {
                 grid-template-columns: repeat(2, 1fr);
             }
             
+            .featured-videos {
+                gap: 30px;
+            }
+            
+            .video-card.featured {
+                grid-column: span 2;
+            }
+            
             .about-content,
+            .about-grid,
             .contact-content {
                 grid-template-columns: 1fr;
-                gap: 2rem;
+                gap: 50px;
             }
             
             .books-grid {
                 grid-template-columns: 1fr;
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .mobile-menu-btn {
-                display: block;
+                gap: 30px;
             }
             
+            .section-title h2 {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
             .nav-menu {
                 position: fixed;
                 top: 80px;
@@ -1047,48 +1361,99 @@
                 flex-direction: column;
                 background-color: var(--dark-gray);
                 text-align: center;
-                padding: 2rem 0;
-                transition: var(--transition-medium);
-                box-shadow: var(--shadow-md);
+                transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                box-shadow: var(--shadow);
                 z-index: 999;
+                padding: 40px 20px;
+                gap: 0;
+                border-top: 1px solid rgba(212, 175, 55, 0.2);
             }
-            
+
             .nav-menu.active {
                 left: 0;
             }
-            
+
             .nav-menu li {
-                margin: 0.75rem 0;
+                margin: 15px 0;
+                width: 100%;
+            }
+
+            .nav-menu a {
+                display: block;
+                padding: 15px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            }
+
+            .nav-menu a:after {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
             }
             
             .hero {
-                padding-top: 5rem;
+                padding-top: 150px;
+                padding-bottom: 100px;
             }
             
-            .hero-portrait {
-                display: none;
+            .hero h1 {
+                font-size: 3rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.5rem;
+            }
+            
+            .hero-text {
+                font-size: 1.1rem;
             }
             
             .hero-buttons {
                 flex-direction: column;
-                align-items: flex-start;
+                align-items: stretch;
             }
             
-            .stats-grid,
+            .hero-buttons .btn {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 15px;
+            }
+            
+            .hero-stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
             .featured-videos,
             .videos-grid,
             .join-grid,
             .events-grid,
-            .press-grid {
+            .press-grid,
+            .stats-grid,
+            .about-stats,
+            .footer-content {
                 grid-template-columns: 1fr;
             }
             
-            .section {
-                padding: 3rem 0;
+            .video-card.featured {
+                grid-column: span 1;
+            }
+            
+            section {
+                padding: 80px 0;
             }
             
             .section-title h2 {
-                font-size: 2rem;
+                font-size: 2.2rem;
+            }
+            
+            .section-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .about-image {
+                height: 400px;
+                order: -1;
             }
             
             .book-card {
@@ -1099,241 +1464,229 @@
                 width: 100%;
                 height: 200px;
             }
+            
+            .download-box {
+                padding: 40px 30px;
+            }
+            
+            .footer-content {
+                gap: 40px;
+            }
         }
-        
+
         @media (max-width: 576px) {
             .hero h1 {
-                font-size: 2.25rem;
+                font-size: 2.5rem;
             }
             
             .hero-subtitle {
-                font-size: 1.125rem;
+                font-size: 1.3rem;
             }
             
-            .stat-number {
+            .hero-stats {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .section-title h2 {
                 font-size: 2rem;
             }
             
-            .download-card {
-                padding: 2rem;
+            .stat-card,
+            .join-card,
+            .event-card,
+            .press-card,
+            .book-card {
+                padding: 30px 20px;
             }
+            
+            .manifesto-text {
+                font-size: 1.2rem;
+                padding: 0 20px;
+            }
+            
+            .manifesto-text:before,
+            .manifesto-text:after {
+                font-size: 4rem;
+            }
+            
+            .about-quote {
+                padding: 25px;
+            }
+            
+            .about-quote p {
+                font-size: 1.1rem;
+            }
+            
+            .stat-number {
+                font-size: 3rem;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .footer-links ul {
+                text-align: center;
+            }
+        }
+
+        /* Loading Animation */
+        .loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--primary-black);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease;
+        }
+
+        .loader.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .loader-spinner {
+            width: 80px;
+            height: 80px;
+            border: 5px solid rgba(212, 175, 55, 0.2);
+            border-top-color: var(--gold);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header class="header" id="header">
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Back to Top -->
+    <a href="#hero" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Header & Navigation -->
+    <header id="header">
         <div class="container nav-container">
-            <a href="#hero" class="logo">Galston<span>Anthony</span></a>
+            <a href="#hero" class="logo">
+                <i class="fas fa-crown logo-icon"></i>
+                Galston<span>Anthony</span>
+            </a>
             
             <button class="mobile-menu-btn" id="mobileMenuBtn">
                 <i class="fas fa-bars"></i>
             </button>
             
             <ul class="nav-menu" id="navMenu">
-                <li><a href="#hero" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#manifesto" class="nav-link">Manifesto</a></li>
-                <li><a href="#events" class="nav-link">Events</a></li>
-                <li><a href="#watch" class="nav-link">Watch</a></li>
-                <li><a href="#join" class="nav-link">Join</a></li>
-                <li><a href="#press" class="nav-link">Press</a></li>
-                <li><a href="#books" class="nav-link">Books</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#manifesto">Manifesto</a></li>
+                <li><a href="#watch">Watch</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#join">Join</a></li>
+                <li><a href="#press">Press</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero section" id="hero">
+    <section class="hero" id="hero">
         <div class="hero-bg"></div>
         <div class="container">
             <div class="hero-content">
                 <h1>Galston Anthony</h1>
-                <div class="hero-subtitle">Builder • Systems Thinker • Mayoral Candidate for Johannesburg</div>
-                <p class="hero-text">I am not a career politician. I am a systems builder. This platform exists to restore competence, accountability and dignity to Johannesburg.</p>
+                <div class="hero-subtitle">Builder. Systems Thinker. Mayoral Candidate for Johannesburg 2026</div>
+                <p class="hero-text">I am not a career politician. I am a systems builder. This platform exists to restore competence, accountability and dignity to Johannesburg. Together, let's make Joburg gold again.</p>
                 <div class="hero-buttons">
-                    <a href="#watch" class="btn btn-primary">Watch Now</a>
-                    <a href="#manifesto" class="btn">Read Manifesto</a>
-                    <a href="#join" class="btn">Join Movement</a>
-                </div>
-            </div>
-            <div class="hero-portrait"></div>
-        </div>
-    </section>
-
-    <!-- Stats Section -->
-    <section class="stats section">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-number">15+</div>
-                    <div class="stat-label">Years in Business</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">250+</div>
-                    <div class="stat-label">Podcast Episodes</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">2M+</div>
-                    <div class="stat-label">Content Views</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">100+</div>
-                    <div class="stat-label">Cities Visited</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Watch Section -->
-    <section class="watch section" id="watch">
-        <div class="container">
-            <div class="section-title">
-                <h2>Watch Now</h2>
-            </div>
-            <p class="section-subtitle">Featured conversations from the G2G Podcast.</p>
-            
-            <div class="featured-videos">
-                <div class="video-card">
-                    <div class="video-thumbnail">
-                        <div class="play-btn">
-                            <i class="fas fa-play"></i>
-                        </div>
-                    </div>
-                    <div class="video-content">
-                        <h3 class="video-title">Herman Mashaba Interview</h3>
-                        <p class="video-description">A powerful conversation with former Johannesburg mayor Herman Mashaba about city governance, entrepreneurship, and rebuilding Johannesburg.</p>
-                        <div class="video-meta">
-                            <i class="fas fa-eye"></i>
-                            <span>245,892 views</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="video-card">
-                    <div class="video-thumbnail">
-                        <div class="play-btn">
-                            <i class="fas fa-play"></i>
-                        </div>
-                    </div>
-                    <div class="video-content">
-                        <h3 class="video-title">Mmusi Maimane Interview</h3>
-                        <p class="video-description">In-depth discussion with political leader Mmusi Maimane on leadership, vision, and the future of South African politics.</p>
-                        <div class="video-meta">
-                            <i class="fas fa-eye"></i>
-                            <span>189,456 views</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="section-title">
-                <h3>Latest Episodes</h3>
-            </div>
-            <div class="videos-grid">
-                <div class="video-card">
-                    <div class="video-thumbnail">
-                        <div class="play-btn">
-                            <i class="fas fa-play"></i>
-                        </div>
-                    </div>
-                    <div class="video-content">
-                        <h3 class="video-title">Business & Infrastructure</h3>
-                        <p class="video-description">How to rebuild Joburg's economy through strategic infrastructure investments.</p>
-                        <div class="video-meta">
-                            <i class="fas fa-eye"></i>
-                            <span>98,432 views</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="video-card">
-                    <div class="video-thumbnail">
-                        <div class="play-btn">
-                            <i class="fas fa-play"></i>
-                        </div>
-                    </div>
-                    <div class="video-content">
-                        <h3 class="video-title">Youth Leadership</h3>
-                        <p class="video-description">Engaging the next generation of leaders in Johannesburg's future.</p>
-                        <div class="video-meta">
-                            <i class="fas fa-eye"></i>
-                            <span>76,543 views</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="video-card">
-                    <div class="video-thumbnail">
-                        <div class="play-btn">
-                            <i class="fas fa-play"></i>
-                        </div>
-                    </div>
-                    <div class="video-content">
-                        <h3 class="video-title">Systems Thinking</h3>
-                        <p class="video-description">Applying systems thinking to solve complex urban challenges in Johannesburg.</p>
-                        <div class="video-meta">
-                            <i class="fas fa-eye"></i>
-                            <span>112,345 views</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Manifesto Section -->
-    <section class="manifesto section" id="manifesto">
-        <div class="container">
-            <div class="section-title">
-                <h2>The Manifesto</h2>
-            </div>
-            
-            <div class="manifesto-content">
-                <p class="manifesto-quote">Johannesburg deserves honesty. This city was never built by one people or one idea... Johannesburg is not broken — it is bleeding. And bleeding can be stopped. This is not political theatre. It is a disciplined, practical plan to restore competence.</p>
-                <div class="manifesto-author">— Galston Anthony</div>
-                
-                <div class="download-card">
-                    <h3>Make Joburg Gold Again Manifesto 2026</h3>
-                    <p>Download the complete 20-chapter manifesto detailing the practical plan to restore Johannesburg to its former glory.</p>
-                    <a href="mayor-manifesto-2026.pdf" class="btn btn-primary btn-large" download>
-                        <i class="fas fa-download"></i> Download Full Manifesto (PDF)
+                    <a href="#manifesto" class="btn btn-primary">
+                        <i class="fas fa-book"></i> Read Manifesto
                     </a>
+                    <a href="#watch" class="btn">
+                        <i class="fas fa-play-circle"></i> Watch Videos
+                    </a>
+                    <a href="#join" class="btn">
+                        <i class="fas fa-hands-helping"></i> Join Movement
+                    </a>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="hero-stat-number counter" data-target="15">0</div>
+                        <div class="hero-stat-label">Years in Business</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number counter" data-target="250">0</div>
+                        <div class="hero-stat-label">Podcast Episodes</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number counter" data-target="2">0</div>
+                        <div class="hero-stat-label">Million Views</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number counter" data-target="100">0</div>
+                        <div class="hero-stat-label">Cities Visited</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="about section" id="about">
+    <section class="about-section" id="about">
         <div class="container">
             <div class="section-title">
                 <h2>About Galston</h2>
+                <p class="section-subtitle">Builder. Systems Thinker. Future Leader of Johannesburg.</p>
             </div>
             
             <div class="about-content">
                 <div class="about-text">
-                    <h3>Builder • Systems Thinker • Leader</h3>
-                    <p>I am not a career politician. I am a creative entrepreneur and systems builder with a background in business, infrastructure, media, and property development.</p>
-                    <p>As the host of G2G Podcast and mayoral candidate for Johannesburg 2026, I approach government like a business: with clear budgets, KPIs, timelines, and a relentless focus on delivery.</p>
+                    <h2>Not a Politician. A Builder.</h2>
+                    <p>I am a creative entrepreneur and systems builder with a background in business, infrastructure, media, and property development. As the host of G2G Podcast and mayoral candidate for Johannesburg 2026, I approach government like a business: with clear budgets, KPIs, timelines, and a relentless focus on delivery.</p>
+                    <p>My journey has taught me that complex urban challenges require holistic, sustainable solutions. Johannesburg's problems are interconnected—crime affects investment, which affects employment, which affects housing. We need systems thinking, not political theater.</p>
                     
                     <div class="about-points">
                         <div class="point">
                             <i class="fas fa-check-circle"></i>
-                            <div>Creative entrepreneur with a track record of building successful systems and businesses</div>
+                            <div class="point-content">
+                                <h4>Creative Entrepreneur</h4>
+                                <p>Track record of building successful systems and businesses from the ground up</p>
+                            </div>
                         </div>
                         <div class="point">
                             <i class="fas fa-check-circle"></i>
-                            <div>Systems thinker who applies strategic frameworks to complex urban challenges</div>
+                            <div class="point-content">
+                                <h4>Systems Thinker</h4>
+                                <p>Applies strategic frameworks to solve complex urban challenges</p>
+                            </div>
                         </div>
                         <div class="point">
                             <i class="fas fa-check-circle"></i>
-                            <div>Host of G2G Podcast, engaging leaders across politics, business and civil society</div>
+                            <div class="point-content">
+                                <h4>Media Leader</h4>
+                                <p>Host of G2G Podcast, engaging leaders across politics, business and civil society</p>
+                            </div>
                         </div>
                         <div class="point">
                             <i class="fas fa-check-circle"></i>
-                            <div>Treats government like a business: budgets, KPIs, timelines, delivery</div>
+                            <div class="point-content">
+                                <h4>Business Approach</h4>
+                                <p>Treats government with business discipline: budgets, KPIs, timelines, delivery</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1343,11 +1696,174 @@
         </div>
     </section>
 
+    <!-- Manifesto Section -->
+    <section class="manifesto-section" id="manifesto">
+        <div class="container">
+            <div class="section-title">
+                <h2>The Manifesto</h2>
+                <p class="section-subtitle">A practical plan to restore Johannesburg to its former glory</p>
+            </div>
+            
+            <div class="manifesto-content">
+                <p class="manifesto-text">Johannesburg deserves honesty. This city was never built by one people or one idea... Johannesburg is not broken — it is bleeding. And bleeding can be stopped. This is not political theatre. It is a disciplined, practical plan to restore competence.</p>
+                <div class="manifesto-author">— Galston Anthony</div>
+                
+                <div class="download-box">
+                    <h3>Make Joburg Gold Again Manifesto 2026</h3>
+                    <p>Download the complete 20-chapter manifesto detailing the practical plan to restore Johannesburg to its rightful place as the economic engine of Africa.</p>
+                    <a href="mayor-manifesto-2026.pdf" class="btn btn-primary" download>
+                        <i class="fas fa-download"></i> Download Full Manifesto (PDF)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Watch Section -->
+    <section class="watch-section" id="watch">
+        <div class="container">
+            <div class="section-title">
+                <h2>Watch Now</h2>
+                <p class="section-subtitle">Featured conversations from the G2G Podcast</p>
+            </div>
+            
+            <div class="featured-videos">
+                <div class="video-card featured">
+                    <div class="video-thumbnail">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">Herman Mashaba Interview: Rebuilding Johannesburg</h3>
+                        <p class="video-description">A powerful conversation with former Johannesburg mayor Herman Mashaba about city governance, entrepreneurship, and the practical steps needed to rebuild Johannesburg from the ground up.</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-eye"></i> 245,892 views</span>
+                            <span><i class="fas fa-clock"></i> 1 hour 15 min</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">Mmusi Maimane Interview: Leadership & Vision</h3>
+                        <p class="video-description">In-depth discussion with political leader Mmusi Maimane on leadership principles, political vision, and the future of South African politics.</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-eye"></i> 189,456 views</span>
+                            <span><i class="fas fa-clock"></i> 58 min</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-title" style="margin-top: 80px;">
+                <h3>Latest Episodes</h3>
+            </div>
+            
+            <div class="videos-grid">
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">Business & Infrastructure Revival</h3>
+                        <p class="video-description">How to rebuild Joburg's economy through strategic infrastructure investments and business-friendly policies.</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-eye"></i> 98,432 views</span>
+                            <span><i class="fas fa-clock"></i> 45 min</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">Youth Leadership Forum</h3>
+                        <p class="video-description">Engaging the next generation of leaders in Johannesburg's future and creating opportunities for youth entrepreneurship.</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-eye"></i> 76,543 views</span>
+                            <span><i class="fas fa-clock"></i> 52 min</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">Systems Thinking for Cities</h3>
+                        <p class="video-description">Applying systems thinking methodologies to solve complex urban challenges in Johannesburg and create sustainable solutions.</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-eye"></i> 112,345 views</span>
+                            <span><i class="fas fa-clock"></i> 1 hour 10 min</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Impact & Reach</h2>
+                <p class="section-subtitle">Building a movement for change across Johannesburg</p>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="stat-number counter" data-target="15">0</div>
+                    <div class="stat-label">Years in Business</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-podcast"></i>
+                    </div>
+                    <div class="stat-number counter" data-target="250">0</div>
+                    <div class="stat-label">Podcast Episodes</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <div class="stat-number counter" data-target="2">0</div>
+                    <div class="stat-label">Million Views</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-globe-africa"></i>
+                    </div>
+                    <div class="stat-number counter" data-target="100">0</div>
+                    <div class="stat-label">Cities Visited</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Join Section -->
-    <section class="join section" id="join">
+    <section class="join-section" id="join">
         <div class="container">
             <div class="section-title">
                 <h2>Join the Movement</h2>
+                <p class="section-subtitle">Be part of the change Johannesburg needs</p>
             </div>
             
             <div class="join-grid">
@@ -1356,19 +1872,24 @@
                         <i class="fas fa-hands-helping"></i>
                     </div>
                     <h3>Volunteer</h3>
-                    <p>Join our team of dedicated volunteers working to rebuild Johannesburg.</p>
+                    <p>Join our growing team of dedicated volunteers working to rebuild Johannesburg. Your skills and passion can make a real difference.</p>
                     
                     <form id="volunteerForm">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Full Name" required>
+                            <label for="volunteerName">Full Name</label>
+                            <input type="text" id="volunteerName" placeholder="Enter your full name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Email Address" required>
+                            <label for="volunteerEmail">Email Address</label>
+                            <input type="email" id="volunteerEmail" placeholder="Enter your email" required>
                         </div>
                         <div class="form-group">
-                            <input type="tel" class="form-control" placeholder="Phone Number" required>
+                            <label for="volunteerPhone">Phone Number</label>
+                            <input type="tel" id="volunteerPhone" placeholder="Enter your phone number" required>
                         </div>
-                        <button type="submit" class="btn btn-primary">Sign Up</button>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-user-plus"></i> Sign Up as Volunteer
+                        </button>
                     </form>
                 </div>
                 
@@ -1377,13 +1898,16 @@
                         <i class="fas fa-newspaper"></i>
                     </div>
                     <h3>Newsletter</h3>
-                    <p>Stay updated with the latest news, events, and campaign updates.</p>
+                    <p>Stay updated with the latest campaign news, events, policy updates, and opportunities to get involved in the movement.</p>
                     
                     <form id="newsletterForm">
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Email Address" required>
+                            <label for="newsletterEmail">Email Address</label>
+                            <input type="email" id="newsletterEmail" placeholder="Enter your email" required>
                         </div>
-                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i> Subscribe Now
+                        </button>
                     </form>
                 </div>
                 
@@ -1391,11 +1915,13 @@
                     <div class="join-icon">
                         <i class="fas fa-donate"></i>
                     </div>
-                    <h3>Donate</h3>
-                    <p>Support our campaign to restore competence and dignity to Johannesburg.</p>
-                    <a href="#" class="btn btn-primary">Donate Now</a>
-                    <p style="margin-top: 1rem; font-size: 0.8125rem; color: var(--off-white);">
-                        PayFast / PayPal / EFT options available
+                    <h3>Support</h3>
+                    <p>Your financial support helps us run a competitive campaign to restore competence and dignity to Johannesburg.</p>
+                    <a href="#" class="btn btn-primary" style="margin-bottom: 20px;">
+                        <i class="fas fa-heart"></i> Donate Now
+                    </a>
+                    <p style="margin-top: 15px; font-size: 0.85rem; color: var(--off-white); opacity: 0.7;">
+                        PayFast • PayPal • EFT • SnapScan
                     </p>
                 </div>
             </div>
@@ -1403,37 +1929,47 @@
     </section>
 
     <!-- Events Section -->
-    <section class="events section" id="events">
+    <section class="events-section" id="events">
         <div class="container">
             <div class="section-title">
                 <h2>Events</h2>
+                <p class="section-subtitle">Engaging with communities across Johannesburg</p>
             </div>
             
             <div class="events-grid">
                 <div class="event-card">
                     <div class="event-date">March 2026</div>
-                    <div class="event-content">
+                    <div class="event-info">
                         <h3 class="event-title">Youth Summit 2026</h3>
-                        <p class="event-description">A groundbreaking summit bringing together young leaders from across Johannesburg to shape the future of the city.</p>
-                        <span class="event-status status-tbc">Date TBC</span>
+                        <p class="event-description">A groundbreaking summit bringing together young leaders from across Johannesburg to shape the future of the city. Focus on education, employment, and youth entrepreneurship.</p>
+                        <div class="event-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Johannesburg</span>
+                            <span class="event-status tbc">Date TBC</span>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="event-card">
                     <div class="event-date">October 2025</div>
-                    <div class="event-content">
+                    <div class="event-info">
                         <h3 class="event-title">Y20 Summit 2025</h3>
-                        <p class="event-description">Represented Johannesburg at the global Y20 Summit, engaging with youth leaders from G20 nations.</p>
-                        <span class="event-status status-past">Past Event</span>
+                        <p class="event-description">Represented Johannesburg at the global Y20 Summit, engaging with youth leaders from G20 nations on sustainable urban development and economic innovation.</p>
+                        <div class="event-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Global</span>
+                            <span class="event-status past">Past Event</span>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="event-card">
                     <div class="event-date">May 2026</div>
-                    <div class="event-content">
+                    <div class="event-info">
                         <h3 class="event-title">Urban Innovation Forum</h3>
-                        <p class="event-description">Gathering of urban planners, tech innovators, and community leaders to discuss smart city solutions.</p>
-                        <span class="event-status status-upcoming">Upcoming</span>
+                        <p class="event-description">Gathering of urban planners, tech innovators, and community leaders to discuss smart city solutions and sustainable urban development for Johannesburg.</p>
+                        <div class="event-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Sandton</span>
+                            <span class="event-status upcoming">Upcoming</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1441,37 +1977,44 @@
     </section>
 
     <!-- Press Section -->
-    <section class="press section" id="press">
+    <section class="press-section" id="press">
         <div class="container">
             <div class="section-title">
                 <h2>Press & Media</h2>
+                <p class="section-subtitle">Coverage and resources from across media platforms</p>
             </div>
             
             <div class="press-grid">
                 <div class="press-card">
                     <div class="press-image"></div>
-                    <div class="press-content">
-                        <div class="press-type">Interview</div>
+                    <div class="press-info">
+                        <div class="press-type">Video Interview</div>
                         <h3 class="press-title">Rebuilding Joburg: A Conversation with Galston Anthony</h3>
-                        <a href="#" class="btn">Watch</a>
+                        <a href="#" class="btn">
+                            <i class="fas fa-play"></i> Watch Interview
+                        </a>
                     </div>
                 </div>
                 
                 <div class="press-card">
                     <div class="press-image"></div>
-                    <div class="press-content">
-                        <div class="press-type">Opinion</div>
+                    <div class="press-info">
+                        <div class="press-type">Opinion Piece</div>
                         <h3 class="press-title">Competence Over Politics: A New Approach to Governance</h3>
-                        <a href="#" class="btn">Read</a>
+                        <a href="#" class="btn">
+                            <i class="fas fa-newspaper"></i> Read Article
+                        </a>
                     </div>
                 </div>
                 
                 <div class="press-card">
                     <div class="press-image"></div>
-                    <div class="press-content">
-                        <div class="press-type">Resources</div>
+                    <div class="press-info">
+                        <div class="press-type">Media Resources</div>
                         <h3 class="press-title">Press Kit & Media Assets</h3>
-                        <a href="#" class="btn">Download</a>
+                        <a href="#" class="btn">
+                            <i class="fas fa-download"></i> Download Kit
+                        </a>
                     </div>
                 </div>
             </div>
@@ -1479,10 +2022,11 @@
     </section>
 
     <!-- Books Section -->
-    <section class="books section" id="books">
+    <section class="books-section" id="books">
         <div class="container">
             <div class="section-title">
                 <h2>Books</h2>
+                <p class="section-subtitle">Thought leadership on economics, strategy, and African growth</p>
             </div>
             
             <div class="books-grid">
@@ -1490,10 +2034,12 @@
                     <div class="book-cover">
                         <i class="fas fa-book"></i>
                     </div>
-                    <div class="book-content">
+                    <div class="book-info">
                         <h3 class="book-title">Capitalist Ubuntu</h3>
-                        <p class="book-description">Economic philosophy, leadership and African growth models. A groundbreaking exploration of how African values can inform and transform capitalist systems for more equitable and sustainable growth.</p>
-                        <a href="#" class="btn">Learn More</a>
+                        <p class="book-description">A groundbreaking exploration of how African values can inform and transform capitalist systems for more equitable and sustainable growth. This book presents a new economic philosophy that combines traditional African wisdom with modern business principles.</p>
+                        <a href="#" class="btn">
+                            <i class="fas fa-shopping-cart"></i> Get the Book
+                        </a>
                     </div>
                 </div>
                 
@@ -1501,10 +2047,12 @@
                     <div class="book-cover">
                         <i class="fas fa-chess-board"></i>
                     </div>
-                    <div class="book-content">
+                    <div class="book-info">
                         <h3 class="book-title">12 Chess Moves to Power</h3>
-                        <p class="book-description">Strategy, influence and leadership frameworks. Learn the strategic thinking and tactical approaches that drive success in business, politics, and personal leadership.</p>
-                        <a href="#" class="btn">Learn More</a>
+                        <p class="book-description">Learn the strategic thinking and tactical approaches that drive success in business, politics, and personal leadership. This book provides frameworks for influence, decision-making, and strategic planning based on chess principles.</p>
+                        <a href="#" class="btn">
+                            <i class="fas fa-shopping-cart"></i> Get the Book
+                        </a>
                     </div>
                 </div>
             </div>
@@ -1512,15 +2060,16 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="contact section" id="contact">
+    <section class="contact-section" id="contact">
         <div class="container">
             <div class="section-title">
                 <h2>Contact</h2>
+                <p class="section-subtitle">Get in touch with our campaign team</p>
             </div>
             
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Get In Touch</h3>
+                    <h3>Contact Information</h3>
                     
                     <div class="contact-details">
                         <div class="contact-item">
@@ -1531,47 +2080,60 @@
                             <i class="fas fa-phone"></i>
                             <a href="tel:+27720445066">+27 72 044 5066</a>
                         </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Johannesburg, South Africa</span>
+                        </div>
                     </div>
                     
-                    <h3>Connect</h3>
-                    <div class="social-grid">
-                        <a href="https://www.instagram.com/galston.anthony" class="social-link" target="_blank">
+                    <h3 style="margin-top: 40px;">Connect Online</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/galston.anthony" class="social-link" target="_blank" aria-label="Instagram">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="https://x.com/galston_anthony" class="social-link" target="_blank">
+                        <a href="https://x.com/galston_anthony" class="social-link" target="_blank" aria-label="Twitter/X">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="https://www.facebook.com/share/16xPTxJtFJ/" class="social-link" target="_blank">
+                        <a href="https://www.facebook.com/share/16xPTxJtFJ/" class="social-link" target="_blank" aria-label="Facebook">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="https://www.tiktok.com/@galston.anthony" class="social-link" target="_blank">
+                        <a href="https://www.tiktok.com/@galston.anthony" class="social-link" target="_blank" aria-label="TikTok">
                             <i class="fab fa-tiktok"></i>
                         </a>
-                        <a href="https://www.youtube.com/@G2GNetwork" class="social-link" target="_blank">
+                        <a href="https://www.youtube.com/@G2GNetwork" class="social-link" target="_blank" aria-label="YouTube">
                             <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/galstonanthony" class="social-link" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
                         </a>
                     </div>
                     
-                    <div class="g2g-link">
-                        <i class="fab fa-instagram"></i>
-                        <a href="https://www.instagram.com/g2gpodcastworldwide" target="_blank">
-                            @g2gpodcastworldwide
+                    <div style="margin-top: 40px;">
+                        <h4 style="color: var(--white); margin-bottom: 15px;">G2G Podcast</h4>
+                        <a href="https://www.instagram.com/g2gpodcastworldwide" class="btn" target="_blank" style="width: auto;">
+                            <i class="fab fa-instagram"></i> @g2gpodcastworldwide
                         </a>
                     </div>
                 </div>
                 
                 <div class="contact-form">
+                    <h3>Send a Message</h3>
                     <form id="contactForm">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Name" required>
+                            <label for="contactName">Your Name</label>
+                            <input type="text" id="contactName" placeholder="Enter your name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Your Email" required>
+                            <label for="contactEmail">Your Email</label>
+                            <input type="email" id="contactEmail" placeholder="Enter your email" required>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" placeholder="Your Message" required></textarea>
+                            <label for="contactMessage">Your Message</label>
+                            <textarea id="contactMessage" placeholder="Enter your message..." required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
                     </form>
                 </div>
             </div>
@@ -1579,18 +2141,67 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer>
         <div class="container">
-            <a href="#hero" class="footer-logo">Galston<span>Anthony</span></a>
-            <div class="footer-tagline">Let's Make Joburg Gold Again</div>
+            <div class="footer-content">
+                <div class="footer-about">
+                    <a href="#hero" class="footer-logo">Galston<span>Anthony</span></a>
+                    <div class="footer-tagline">Let's Make Joburg Gold Again</div>
+                    <p class="footer-about">A movement to restore competence, accountability and dignity to Johannesburg. Not a career politician, but a systems builder with a practical plan for change.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Campaign</h4>
+                    <ul>
+                        <li><a href="#about">About Galston</a></li>
+                        <li><a href="#manifesto">The Manifesto</a></li>
+                        <li><a href="#watch">Videos</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#join">Get Involved</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#press">Press & Media</a></li>
+                        <li><a href="#books">Books</a></li>
+                        <li><a href="#">Policy Papers</a></li>
+                        <li><a href="#">Volunteer Resources</a></li>
+                        <li><a href="#">Campaign Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Stay Updated</h4>
+                    <p style="color: var(--off-white); margin-bottom: 20px; opacity: 0.8;">Subscribe to our newsletter for campaign updates</p>
+                    <form class="newsletter-form" id="footerNewsletterForm">
+                        <div class="form-group">
+                            <input type="email" placeholder="Your email address" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i> Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
             <div class="copyright">
-                &copy; 2026 Galston Anthony. All Rights Reserved.
+                &copy; 2026 Galston Anthony Campaign. All Rights Reserved.<br>
+                Johannesburg Mayoral Campaign 2026 • Let's Make Joburg Gold Again
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript -->
     <script>
+        // Page Loader
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('loader');
+            setTimeout(() => {
+                loader.classList.add('hidden');
+            }, 800);
+        });
+
         // Mobile Menu Toggle
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const navMenu = document.getElementById('navMenu');
@@ -1603,7 +2214,7 @@
         });
         
         // Close mobile menu when clicking a link
-        document.querySelectorAll('.nav-link').forEach(link => {
+        document.querySelectorAll('.nav-menu a').forEach(link => {
             link.addEventListener('click', () => {
                 navMenu.classList.remove('active');
                 mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
@@ -1613,35 +2224,167 @@
         // Header scroll effect
         window.addEventListener('scroll', () => {
             const header = document.getElementById('header');
+            const backToTop = document.getElementById('backToTop');
+            
             if (window.scrollY > 100) {
                 header.classList.add('scrolled');
+                backToTop.classList.add('visible');
             } else {
                 header.classList.remove('scrolled');
+                backToTop.classList.remove('visible');
             }
+        });
+        
+        // Animated Counter
+        const counters = document.querySelectorAll('.counter');
+        const speed = 200;
+        
+        const animateCounter = () => {
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText.replace(',', '');
+                const increment = target / speed;
+                
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + increment).toLocaleString();
+                    setTimeout(animateCounter, 10);
+                } else {
+                    counter.innerText = target.toLocaleString();
+                }
+            });
+        };
+        
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    if (entry.target.classList.contains('counter')) {
+                        animateCounter();
+                    }
+                    entry.target.classList.add('animate');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        
+        // Observe elements for animation
+        document.querySelectorAll('.counter, .stat-card, .video-card, .join-card, .event-card, .press-card, .book-card').forEach(el => {
+            observer.observe(el);
         });
         
         // Form submission handling
         document.getElementById('volunteerForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            alert('Thank you for volunteering! We will be in touch soon.');
+            showNotification('Thank you for volunteering! We will be in touch soon.', 'success');
             this.reset();
         });
         
         document.getElementById('newsletterForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            alert('Thank you for subscribing to our newsletter!');
+            showNotification('Thank you for subscribing to our newsletter!', 'success');
+            this.reset();
+        });
+        
+        document.getElementById('footerNewsletterForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            showNotification('Thank you for subscribing!', 'success');
             this.reset();
         });
         
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            alert('Thank you for your message! We will respond as soon as possible.');
+            showNotification('Thank you for your message! We will respond as soon as possible.', 'success');
             this.reset();
         });
         
+        // Notification System
+        function showNotification(message, type) {
+            const notification = document.createElement('div');
+            notification.className = `notification ${type}`;
+            notification.innerHTML = `
+                <i class="fas fa-${type === 'success' ? 'check-circle' : 'exclamation-circle'}"></i>
+                <span>${message}</span>
+                <button class="notification-close"><i class="fas fa-times"></i></button>
+            `;
+            
+            // Add styles for notification
+            const style = document.createElement('style');
+            style.textContent = `
+                .notification {
+                    position: fixed;
+                    top: 100px;
+                    right: 30px;
+                    background: var(--medium-gray);
+                    color: var(--white);
+                    padding: 20px 25px;
+                    border-radius: 12px;
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    z-index: 9999;
+                    box-shadow: var(--shadow);
+                    border-left: 5px solid var(--gold);
+                    transform: translateX(400px);
+                    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                    max-width: 400px;
+                }
+                .notification.success {
+                    border-left-color: var(--gold);
+                }
+                .notification.error {
+                    border-left-color: #ff4444;
+                }
+                .notification i {
+                    font-size: 1.5rem;
+                }
+                .notification.success i {
+                    color: var(--gold);
+                }
+                .notification.error i {
+                    color: #ff4444;
+                }
+                .notification-close {
+                    background: none;
+                    border: none;
+                    color: var(--off-white);
+                    cursor: pointer;
+                    padding: 5px;
+                    margin-left: 10px;
+                }
+                .notification.show {
+                    transform: translateX(0);
+                }
+            `;
+            
+            document.head.appendChild(style);
+            document.body.appendChild(notification);
+            
+            // Show notification
+            setTimeout(() => notification.classList.add('show'), 10);
+            
+            // Close button
+            notification.querySelector('.notification-close').addEventListener('click', () => {
+                notification.classList.remove('show');
+                setTimeout(() => notification.remove(), 400);
+            });
+            
+            // Auto-remove after 5 seconds
+            setTimeout(() => {
+                if (notification.parentNode) {
+                    notification.classList.remove('show');
+                    setTimeout(() => notification.remove(), 400);
+                }
+            }, 5000);
+        }
+        
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
+            anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 
                 const targetId = this.getAttribute('href');
@@ -1650,7 +2393,7 @@
                 const targetElement = document.querySelector(targetId);
                 if (targetElement) {
                     window.scrollTo({
-                        top: targetElement.offsetTop - 80,
+                        top: targetElement.offsetTop - 100,
                         behavior: 'smooth'
                     });
                 }
@@ -1659,7 +2402,25 @@
         
         // Initialize header on load
         window.dispatchEvent(new Event('scroll'));
+        
+        // Add active class to nav links based on scroll position
+        const sections = document.querySelectorAll('section[id]');
+        
+        window.addEventListener('scroll', () => {
+            const scrollY = window.pageYOffset;
+            
+            sections.forEach(section => {
+                const sectionHeight = section.offsetHeight;
+                const sectionTop = section.offsetTop - 150;
+                const sectionId = section.getAttribute('id');
+                
+                if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                    document.querySelector(`.nav-menu a[href*=${sectionId}]`).classList.add('active');
+                } else {
+                    document.querySelector(`.nav-menu a[href*=${sectionId}]`).classList.remove('active');
+                }
+            });
+        });
     </script>
 </body>
-</html>
 </html>
